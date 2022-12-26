@@ -35,6 +35,23 @@ public class Lc202 {
         else
             return false;
     }
+    /*Another approach for this problem */
+    // public boolean isHappy(int n) {
+    //     while(n>4){
+    //         int s=0,num=n;
+    //         while(num>0){
+    //             int d=num%10;
+    //             s=s+(d*d);
+    //             num/=10;
+    //         }
+    //         n=s;
+    //     }
+    //     if(n==1)
+    //         return true;
+    //     else
+    //         return false;
+        
+    // }
     public static void main(String[] args) {
         int n=7;
         Lc202 t=new Lc202();
