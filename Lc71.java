@@ -12,7 +12,6 @@ public class Lc71 {
             return 1;
        for(int i=0;i<n-1;i++){
            sum=c1+c2;
-           int t=c1;
            c1=c2;
            c2=sum;
        } 
