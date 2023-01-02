@@ -47,6 +47,6 @@ public class Lc2357 {
     public static void main(String[] args) {
         int[] arr = { 1, 5, 0, 3, 5 };
         Lc2357 t = new Lc2357();
-        System.out.println();
+        System.out.println(t.minimumOperations(arr));
     }
 }
