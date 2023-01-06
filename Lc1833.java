@@ -19,6 +19,8 @@ public class Lc1833 {
         // Arrays.sort(costs);
         int sum=0,c=0;
         for(int i=0;i<costs.length;i++){
+            // We can directly substract the cost from coins or go for adding the costs
+            // into sums and check if it is less or equal to the coins
             /*
             if(coins>=costs[i]){
                 c++;
