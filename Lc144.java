@@ -1,15 +1,4 @@
 import java.util.*;
-/*Question:- Binary Tree PostOrder Traversal
- *Link:-https://leetcode.com/problems/binary-tree-postorder-traversal/description/
-    
-
-Input: root = [1,null,2,3]
-Output: [3,2,1]
-Input: root = []
-Output: []
-Input: root = [1]
-Output: [1]
-*/
 class TreeNode {
     int val;
     TreeNode left;
@@ -21,27 +10,25 @@ class TreeNode {
         this.right = right;
     }
 }
-public class Lc145 {
+public class Lc144 {
     /* This is code you to know for the solution of the problem */
     List<Integer> l=new ArrayList<>();
-    public void postOrder(TreeNode root){
-        if(root==null){
+    public void preOrder(TreeNode root){        
+        if(root==null)
             return;
-        }
-        postOrder(root.left);
-        postOrder(root.right);
         l.add(root.val);
-    }
-    public List<Integer> postorderTraversal(TreeNode root) {
-        postOrder(root);
+        preOrder(root.left);
+        preOrder(root.right);
+    }  
+    public List<Integer> preorderTraversal(TreeNode root) {
+        preOrder(root);
         return l;
-
     }
     /* Till here */
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
-        Lc145 t=new Lc145();
-        System.out.println(t.postorderTraversal(createTree()));
+        Lc144 t=new Lc144();
+        System.out.println(t.preorderTraversal(createTree()));
     }
     static TreeNode createTree(){
         TreeNode root=null;
