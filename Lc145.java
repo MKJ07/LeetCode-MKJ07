@@ -41,7 +41,8 @@ public class Lc145 {
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
         Lc145 t=new Lc145();
-        System.out.println(t.postorderTraversal(createTree()));
+        TreeNode r=createTree();
+        System.out.println(t.postorderTraversal(r));
     }
     static TreeNode createTree(){
         TreeNode root=null;
