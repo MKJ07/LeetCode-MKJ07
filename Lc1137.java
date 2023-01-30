@@ -1,4 +1,5 @@
-/*Code Link:-https://leetcode.com/problems/n-th-tribonacci-number/description/
+/*Question: 1137. N-th Tribonacci Number.
+Link:-https://leetcode.com/problems/n-th-tribonacci-number/description/
 Input: n = 4
 Output: 4
 Input: n = 25
