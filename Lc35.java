@@ -26,6 +26,21 @@ public class Lc35 {
             }
         }
         return mid;
+
+        //Another way is given below
+        // int c=0;
+        // if(nums[0]>target){
+        //     return 0;
+        // }
+        // for(int i=0;i<nums.length;i++){
+        //     if(nums[i]==target){
+        //         return i;
+        //     }
+        //     else if(nums[i]<target){
+        //         c=i;
+        //     }
+        // }
+        // return c+1;
         
     }
     public static void main(String[] args) {
