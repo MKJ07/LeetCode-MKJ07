@@ -42,7 +42,7 @@ If you have any suggestions, improvements, or new solutions, feel free to contri
 
 ## Contact
 
-Connect with me on [LeetCode](https://leetcode.com/MKJ07/) to explore more coding adventures.
-Connect with me on [LinkedIn](https://www.linkedin.com/in/mahesh-kumar-jaiswal-1501581b6/).
+- Connect with me on [LeetCode](https://leetcode.com/MKJ07/) to explore more coding adventures.
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/mahesh-kumar-jaiswal-1501581b6/) for professional networking.
 
 Happy coding! 🚀
