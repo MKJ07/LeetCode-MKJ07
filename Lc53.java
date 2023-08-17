@@ -9,34 +9,49 @@ Output: 23
  */
 public class Lc53 {
     public int maxSubArray(int[] nums) {
-        int m=Integer.MIN_VALUE,c=0;
-        int cnt=0;
-        int max=Integer.MIN_VALUE;
+        /*This is Optimal approach havong TC: O(n) and SC: O(1) */
+        int maxSum=Integer.MIN_VALUE, sum=0;
         for(int i=0;i<nums.length;i++){
-            if(nums[i]<0){
-                cnt++;
+            if(sum<0){
+                sum=0;
             }
-            max=Math.max(max,nums[i]);
-        }
-        if(cnt==nums.length){
-            return max;
-        }
-        for(int i=0;i<nums.length;i++){
-            c+=nums[i];
-            if(c<0){
-                c=0;
-            }
-            if(c>m){
-                m=c;
+            sum+=nums[i];
+            if(sum>maxSum){
+                maxSum=sum;
             }
         }
-        if(m<0){
-            int t=nums[0];
-            return t;
-        }else{
-            return m;
+        return maxSum;
+
+
+        /*This is brute force approach though havong TC: O(n) and SC: O(1) */
+        // int m=Integer.MIN_VALUE,c=0;
+        // int cnt=0;
+        // int max=Integer.MIN_VALUE;
+        // for(int i=0;i<nums.length;i++){
+        //     if(nums[i]<0){
+        //         cnt++;
+        //     }
+        //     max=Math.max(max,nums[i]);
+        // }
+        // if(cnt==nums.length){
+        //     return max;
+        // }
+        // for(int i=0;i<nums.length;i++){
+        //     c+=nums[i];
+        //     if(c<0){
+        //         c=0;
+        //     }
+        //     if(c>m){
+        //         m=c;
+        //     }
+        // }
+        // if(m<0){
+        //     int t=nums[0];
+        //     return t;
+        // }else{
+        //     return m;
             
-        }
+        // }
         
     }
     public static void main(String[] args) {
