@@ -1,3 +1,10 @@
+/*Question: 152. Maximum Product Subarray.
+Link: https://leetcode.com/problems/maximum-product-subarray/description/
+
+Input: nums = [-2,0,-1]
+Output: 0
+Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
+*/
 public class Lc152 {
     public int maxProduct(int[] nums) {
         long pre = 1, suff = 1;
