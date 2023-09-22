@@ -1,7 +1,8 @@
 /*Input: nums = [1,3,5,6], target = 2
 Output: 1
 Input: nums = [1,3,5,6], target = 7
-Output: 4 */
+Output: 4 
+*/
 public class Lc35 {
     public int searchInsert(int[] nums, int target) {
         /*This is using binary search using while loop and more clearly */
