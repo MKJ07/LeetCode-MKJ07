@@ -1,4 +1,6 @@
-/*Input: nums = [1,3,5,6], target = 2
+/*Question: 35. Search Insert Position.
+Link: https://leetcode.com/problems/search-insert-position/
+Input: nums = [1,3,5,6], target = 2
 Output: 1
 Input: nums = [1,3,5,6], target = 7
 Output: 4 
