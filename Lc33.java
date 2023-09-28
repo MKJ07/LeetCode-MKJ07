@@ -1,3 +1,12 @@
+/*Question: 33. Search in Rotated Sorted Array
+Link: https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+*/
 public class Lc33 {
     public int search(int[] nums, int target) {
         int low=0,high=nums.length-1;
