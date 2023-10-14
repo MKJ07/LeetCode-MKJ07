@@ -1,5 +1,5 @@
 import java.util.*;
-/*Question: 540. Single Element in a Sorted Array
+/*Question: 540. Single Element in a Sorted Array.
 Link:-https://leetcode.com/problems/single-element-in-a-sorted-array/description/
 
 Input: nums = [1,1,2,3,3,4,4,8,8]
