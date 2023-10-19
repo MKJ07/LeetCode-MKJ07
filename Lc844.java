@@ -1,5 +1,11 @@
 import java.util.Stack;
+/*Question: 844. Backspace String Compare.
+Link: https://leetcode.com/problems/backspace-string-compare/description/
 
+Input: s = "a#c", t = "b"
+Output: false
+Explanation: s becomes "c" while t becomes "b".
+*/
 public class Lc844 {
     static String calc(String s){
         Stack<Character> st=new Stack<>();
