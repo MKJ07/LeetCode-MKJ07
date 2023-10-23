@@ -1,3 +1,14 @@
+/*Question: 875. Koko Eating Bananas.
+Link: https://leetcode.com/problems/koko-eating-bananas/description/
+
+Example 1:
+Input: piles = [3,6,7,11], h = 8
+Output: 4
+
+Example 2:
+Input: piles = [30,11,23,4,20], h = 5
+Output: 30
+*/
 public class Lc875 {
     static int totalhour(int []piles,int hour){
         int n=piles.length;
@@ -8,6 +19,7 @@ public class Lc875 {
         return thour;
     }
     public int minEatingSpeed(int[] piles, int h) {
+        /*This is the optimal approach having TC: O(n*log max) and SC:O(1) //here max is the largest number in the array*/
         int max=Integer.MIN_VALUE;
         for(int i:piles){
             if(i>max){
