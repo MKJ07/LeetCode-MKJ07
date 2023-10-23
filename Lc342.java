@@ -11,7 +11,8 @@ Output: false
 */
 public class Lc342 {
     public boolean isPowerOfFour(int n) {
-        if(n<1 || n==2147483647)
+        /*This is the optimal approach having TC: O(log₄ n) and SC: O(1) */
+        if(n<1 || n==2147483647) // n==2147483647 (ek hi testcase bacha tha jho run nhi ho rha tha toh hard code kr diya)
             return false;
         if(n==1) return true;
         int low=1,high=n;
