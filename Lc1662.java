@@ -7,7 +7,7 @@ Explanation:
 word1 represents string "ab" + "c" -> "abc"
 word2 represents string "a" + "bc" -> "abc"
 The strings are the same, so return true.
- */
+*/
 public class Lc1662 {
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         /*This code has TC: O(m1​+m2​+n) and SC: O(1) */
