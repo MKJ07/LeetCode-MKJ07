@@ -1,4 +1,4 @@
-/*Question: 1688. Count of Matches in Tournament
+/*Question: 1688. Count of Matches in Tournament.
 Link: https://leetcode.com/problems/count-of-matches-in-tournament/description/
 
 Input: n = 14
