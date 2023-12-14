@@ -22,7 +22,6 @@ This repository is organized into different sections based on problem categories
 - **Input**: Sample input for testing.
 - **Output**: Expected output corresponding to the sample input.
 
-- ...
 
 ## Problem of the Day (POTD)
 
