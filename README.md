@@ -33,8 +33,6 @@ This repository is organized into different sections based on problem categories
 - **Solution**: Code implementation.
 - **Input**: Sample input.
 - **Output**: Expected output.
-  
-- ...
 
 ## Contribute
 
