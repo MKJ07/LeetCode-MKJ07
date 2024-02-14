@@ -10,6 +10,7 @@ Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are inco
  */
 public class Lc2149 {
     public int[] rearrangeArray(int[] nums) {
+        /*This approach has TC; O(n) and SC: O(1) {where n is the size of the array} */
         int posIdx=0,negIdx=1;
         int[] result=new int[nums.length];
         for(int i=0;i<nums.length;i++){
