@@ -13,7 +13,7 @@ Output: -1
 */
 public class Lc387 {
     public int firstUniqChar(String s) {
-        /*This code has TC: O(2n) and SC: O(n) */
+        /*This code has TC: O(2n) and SC: O(n)*/
         int n=s.length();
         HashMap<Character,Integer> h1=new HashMap<>();
         for(int i=0;i<n;i++){
