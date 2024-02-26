@@ -12,6 +12,7 @@ Output: false
 */
 public class Lc100 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        /*This approach has TC: and SC: O(n) {n: No of nodes of the tree and depth of the tree} */
         if(p==null && q==null){
             return true;
         }
