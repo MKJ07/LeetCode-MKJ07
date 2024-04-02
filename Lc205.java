@@ -41,7 +41,6 @@ public class Lc205 {
         String str2 = "add";
         Lc205 obj=new Lc205();
         System.out.println(obj.isIsomorphic(str1, str2));
-
         String str3 = "foo";
         String str4 = "bar";
         System.out.println(obj.isIsomorphic(str3, str4));
