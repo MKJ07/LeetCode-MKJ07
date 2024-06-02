@@ -34,6 +34,44 @@ public class Lc4 {
         return res;
     }
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        /*This is the first approach has TC: O(n1+n2) and SC: O(1) */
+        int n1=nums1.length;
+        int n2=nums2.length;
+        int n=n1+n2;
+        int idx1=(n1+n2)/2-1;
+        int idx2=(n1+n2)/2;
+        int i=0,j=0,cnt=0;
+        int idxEle1=-1,idxEle2=-1;
+        while(i<n1 && j<n2){
+            if(nums1[i]<nums2[j]){
+                if(cnt==idx1) idxEle1=nums1[i];
+                if(cnt==idx2) idxEle2=nums1[i];
+                cnt++;i++;
+            }
+            else{
+                if(cnt==idx1) idxEle1=nums2[j];
+                if(cnt==idx2) idxEle2=nums2[j];
+                cnt++;j++;
+            }
+            if(idxEle1!=-1 && idxEle2!=-1) break;
+        }
+        while(i<n1){
+            if(cnt==idx1) idxEle1=nums1[i];
+            if(cnt==idx2) idxEle2=nums1[i];
+            cnt++;i++;
+            if(idxEle1!=-1 && idxEle2!=-1) break;
+        }
+        while(j<n2){
+            if(cnt==idx1) idxEle1=nums2[j];
+            if(cnt==idx2) idxEle2=nums2[j];
+            cnt++;j++;
+            if(idxEle1!=-1 && idxEle2!=-1) break;
+        }
+        if(n%2==0)
+            return (double)(idxEle1+idxEle2)/2;
+        return idxEle2;
+
+        /*This is the second approach having TC: O(n1+n2) and SC: O(n1+n2)  */
         int[] mergeArray=merge(nums1,nums2);
         int n=mergeArray.length;
         if(n%2==0){
