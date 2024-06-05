@@ -71,7 +71,7 @@ public class Lc4 {
             return (double)(idxEle1+idxEle2)/2;
         return idxEle2;
 
-        /*This is the second approach having TC: O(n1+n2) and SC: O(n1+n2)  */
+        /*This is the second approach having TC: O(n1+n2) and SC: O(n1+n2)  
         int[] mergeArray=merge(nums1,nums2);
         int n=mergeArray.length;
         if(n%2==0){
@@ -81,7 +81,7 @@ public class Lc4 {
         }
         else{
             return mergeArray[n/2];
-        }
+        }*/
     }
     public static void main(String[] args) {
         int []arr1={1,2,4,5,8};
